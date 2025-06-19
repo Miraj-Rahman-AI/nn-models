@@ -33,7 +33,7 @@ This project explores the use of neural networks to generate new musical pieces.
 * `output.mp3`: An example of a generated audio file.
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** Python
 * **Libraries (Probable):**
@@ -41,7 +41,7 @@ This project explores the use of neural networks to generate new musical pieces.
     * **Music Generation:** mido, music21, pydub, NumPy, TensorFlow/PyTorch
 
 
-## 🚀 How to Use
+## How to Use
 
 1.  **Clone the repository:**
     ```bash
