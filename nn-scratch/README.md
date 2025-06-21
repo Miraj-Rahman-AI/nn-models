@@ -1,6 +1,6 @@
 # Create and Train a Neural Network in Python
 
-An implementation to create and train a simple neural network in python - just to learn the basics of how neural networks work. Note: if you're looking for an implementation which uses automatic differentiation, take a look at [scalarflow](https://github.com/am1tyadav/scalarflow)
+An implementation to create and train a simple neural network in python - just to learn the basics of how neural networks work. Note: if you're looking for an implementation which uses automatic differentiation.
 
 Run the full example:
 
@@ -186,7 +186,7 @@ python boston.py
 
 ## Development
 
-Currently tested with `python>=3.11`
+Currently tested with `python>=3.13`
 
 Tests for the `nn` module are available in `./tests` and can be run with `python -m unittest discover ./tests -v`
 
