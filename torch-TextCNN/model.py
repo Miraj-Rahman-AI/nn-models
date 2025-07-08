@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Sep 14 17:14:26 2019
-
-@author: HSU, CHIH-CHAO
-"""
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
