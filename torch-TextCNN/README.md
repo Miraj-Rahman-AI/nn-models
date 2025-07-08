@@ -1,24 +1,12 @@
-# Convolutional Neural Networks for Sentence Classification
+# Convolutional Neural Networks (CNN) for Text Classification
 
-This is an Pytorch implementation of the paper [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882), the structure in this project is named as **CNN-non-static** in the paper. I wrap this model to facilitate anyone who want to train and validate their own dataset with TextCNN rapidly by preparing certain format of *.csv* file and providing parameters from users.
+### 1. Overview
+Text classification is a fundamental task in Natural Language Processing (NLP), involving the assignment of predefined categories to textual data. It has a wide range of applications, including sentiment analysis, spam detection, topic labeling, and intent recognition. Traditional approaches to text classification often relied on hand-crafted features and shallow models, which required domain expertise and struggled to generalize across different datasets.
 
-## Getting Started
+In recent years, deep learning models have significantly improved performance in text classification tasks by automatically learning hierarchical representations from raw text. Among these models, Convolutional Neural Networks (CNNs) have emerged as a powerful and efficient architecture for capturing local patterns in text, such as n-grams, without relying on sequential processing. Originally designed for image recognition, CNNs have been successfully adapted to textual data by treating a sentence or document as a one-dimensional sequence of word embeddings. Through the application of convolutional filters of various sizes, CNNs can extract features that represent meaningful phrases or word combinations. These features are then aggregated through pooling operations and passed to fully connected layers for classification.
 
-Follow the following section to conduct your multi-calss or binary-class sentimental analysis.
+Compared to Recurrent Neural Networks (RNNs), CNNs offer advantages in parallelization, computational efficiency, and capturing local context. Their ability to detect discriminative phrases regardless of position makes them particularly suitable for tasks like sentiment classification, where certain words or expressions are strong indicators of class labels. This project leverages CNNs to perform binary sentiment classification on the IMDB movie review dataset, demonstrating the effectiveness of convolutional architectures in text classification scenarios.
 
-### 1. Check Environment
-
-This project is developed under following enviroment:
-
-```
-python 3.6
-pytorch 1.2.0
-torchtext 0.4.0
-numpy 1.16.5
-pandas 0.25.1
-matplotlib 3.1.1
-spacy 2.1.8
-```
 
 ### 2. Prepare .csv file
 
@@ -73,14 +61,7 @@ and '--pretrained' at [torchtext pretrained_alias](https://torchtext.readthedocs
 ### 4. Check the results
 The *main.py* will produce two simple plot that helps you check if there is any probelm with traning. Moreover, the best validation parameters will be stored in the same directory. 
 
-
-## Authors
-
-* **HSU, CHIH-CHAO** - *Professional Machine Learning Master Student at [Mila](https://mila.quebec/)* 
-
 ## Reference
-Thanks to the information from following sources:
-
 * https://stackoverflow.com/questions/43697240/how-can-i-split-a-dataset-from-a-csv-file-for-training-and-testing
 * http://anie.me/On-Torchtext/
 * https://mlexplained.com/2018/02/08/a-comprehensive-tutorial-to-torchtext/
