@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Sep 14 17:50:00 2019
-
-@author: HSU, CHIH-CHAO
-"""
-
-#try to use nn for crossentropy
-
 import torch
 import torch.nn.functional as F
 
