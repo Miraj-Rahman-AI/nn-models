@@ -1,15 +1,12 @@
 import re
-
 import pandas as pd
 from numpy.random import RandomState
-
 import torchtext
 from torchtext.data import Field
 from torchtext.data import TabularDataset
 from torchtext.vocab import GloVe
 from torchtext.data import Iterator, BucketIterator
 import torchtext.datasets
-
 import spacy
 
 def split_train_valid(path_data, path_train, path_valid, frac=0.7):
