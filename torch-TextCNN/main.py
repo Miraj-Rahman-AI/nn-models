@@ -1,18 +1,9 @@
-# -*- coding: utf-8 -*-
-"""main.ipynb
-
-@author: HSU, CHIH-CHAO
-"""
-
 import argparse
-
 import torch
 import torch.optim as optim
-
 import dataset
 import model
 import training
-
 import matplotlib.pyplot as plt
 
 
